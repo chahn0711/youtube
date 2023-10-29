@@ -13,6 +13,7 @@
       src="https://kit.fontawesome.com/8824d8f107.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./main.js" defer></script>
   </head>
   <body>
     <!-- Header -->
@@ -26,112 +27,118 @@
         <i class="fa-solid fa-ellipsis-vertical"></i>
       </div>
     </header>
+
     <!-- Video Player -->
     <section class="player">
       <video controls src="./video/big_buck_bunny_720p_surround.mp4"></video>
     </section>
 
-    <!-- Video Info -->
-    <section class="info">
-      <!-- Metadata -->
-      <div class="metadata">
-        <ul class="hashtags">
-          <li>#DreamCoding</li>
-          <li>#DreamCoders</li>
-          <li>#Ellie</li>
-        </ul>
-        <div class="titleAndButton">
-          <span class="title"
-            >클론코딩 유튜브 사이트 따라 만들기(HTML+CSS 연습편, 웹 포트폴리오)
-            | 프론트엔드 개발자 입문편: HTML, CSS, Javascript</span
-          >
-          <button class="moreBtn">
-            <i class="fa-solid fa-caret-down"></i>
-          </button>
-        </div>
-        <div class="views">
+    <div class="infoAndUpNext">
+      <!-- Video Info -->
+      <section class="info">
+        <!-- Metadata -->
+        <div class="metadata">
+          <ul class="hashtags">
+            <li>#DreamCoding</li>
+            <li>#DreamCoders</li>
+            <li>#Ellie</li>
+          </ul>
+          <div class="titleAndButton">
+            <span class="title clamp">
+              클론코딩 유튜브 사이트 따라 만들기(HTML+CSS 연습편, 웹
+              포트폴리오)프론트엔드 개발자 입문편: HTML, CSS, Javascript
+            </span>
+            <button class="moreBtn">
+              <i class="fa-solid fa-caret-down"></i>
+            </button>
+          </div>
           <span class="views">1M views 1 month ago</span>
         </div>
-      </div>
-      <!-- Actions -->
-      <ul class="actions">
-        <li>
-          <button>
-            <i class="fa-regular fa-thumbs-up"></i><span>1K</span>
-          </button>
-        </li>
-        <li>
-          <button>
-            <i class="fa-regular fa-thumbs-down"></i><span>0</span>
-          </button>
-        </li>
-        <li>
-          <button><i class="fa-solid fa-share"></i><span>Share</span></button>
-        </li>
-        <li>
-          <button><i class="fa-solid fa-plus"></i><span>Save</span></button>
-        </li>
-        <li>
-          <button>
-            <i class="fab fa-font-awesome-flag"></i><span>Report</span>
-          </button>
-        </li>
-      </ul>
-      <!-- Channnel Description -->
-      <div class="channel">
-        <div class="metadata">
-          <img src="./image/bear.png" alt="" />
-          <div class="info">
-            <span class="name">곰돌이사육사</span>
-            <span class="subscribers">1M subscribers</span>
+        <!-- Actions buttons -->
+        <ul class="actions">
+          <li>
+            <button>
+              <i class="fa-regular fa-thumbs-up"></i><span>1K</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <i class="fa-regular fa-thumbs-down"></i><span>0</span>
+            </button>
+          </li>
+          <li>
+            <button><i class="fa-solid fa-share"></i><span>Share</span></button>
+          </li>
+          <li>
+            <button><i class="fa-solid fa-plus"></i><span>Save</span></button>
+          </li>
+          <li>
+            <button>
+              <i class="fab fa-font-awesome-flag"></i><span>Report</span>
+            </button>
+          </li>
+        </ul>
+        <!-- Channnel Description -->
+        <div class="channel">
+          <div class="metadata">
+            <img src="./image/bear.png" alt="" />
+            <div class="info">
+              <span class="name">곰돌이사육사</span>
+              <span class="subscribers">1M subscribers</span>
+            </div>
           </div>
+          <button class="subscribe">subscribe</button>
         </div>
-        <button class="subscribe">subscribe</button>
-      </div>
-    </section>
-    <section class="upNext">
-      <span class="title">Up next</span>
-      <ul>
-        <li class="item">
-          <img src="./image/cup-4.jpg" alt="" />
-          <div class="info">
-            <span class="title"
-              >[Playlist] 없던 첫사랑도 생기는 설레는 띵곡 노래모음 플레이리스트
-              #2</span
-            ><span class="name">곰돌이</span
-            ><span class="views">82K views</span>
-          </div>
-          <button class="moreBtn">
-            <i class="fa-solid fa-ellipsis-vertical"></i>
-          </button>
-        </li>
-        <li class="item">
-          <img src="./image/cup-7.jpg" alt="" />
-          <div class="info">
-            <span class="title"
-              >[Playlist] 없던 첫사랑도 생기는 설레는 띵곡 노래모음 플레이리스트
-              #2</span
-            ><span class="name">곰돌이</span
-            ><span class="views">82K views</span>
-          </div>
-          <button class="moreBtn">
-            <i class="fa-solid fa-ellipsis-vertical"></i>
-          </button>
-        </li>
-        <li class="item">
-          <img src="./image/cup-5.jpg" alt="" />
-          <div class="info">
-            <span class="title"
-              >[Playlist] 없던 첫사랑도 생기는 설레는 띵곡 노래모음 플레이리스트
-              #3</span
-            ><span class="name">곰돌이</span
-            ><span class="views">82K views</span>
-          </div>
-          <button class="moreBtn">
-            <i class="fa-solid fa-ellipsis-vertical"></i>
-          </button>
-        </li>
-      </ul>
-    </section>
+      </section>
+
+      <!-- Up Next -->
+      <section class="upNext">
+        <span class="title">Up next</span>
+        <ul>
+          <li class="item">
+            <div class="img"><img src="./image/cup-4.jpg" alt="" /></div>
+            <div class="itemInfo">
+              <span class="title"
+                >[Playlist] 없던 첫사랑도 생기는 설레는 띵곡 노래모음
+                플레이리스트#2
+              </span>
+              <span class="name">곰돌이</span>
+              <span class="views">82K views</span>
+            </div>
+            <button class="moreBtn">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </button>
+          </li>
+          <li class="item">
+            <div class="img"><img src="./image/cup-7.jpg" alt="" /></div>
+            <div class="itemInfo">
+              <span class="title"
+                >[Playlist] 없던 첫사랑도 생기는 설레는 띵곡 노래모음
+                플레이리스트#2</span
+              >
+              <span class="name">곰돌이</span>
+              <span class="views">82K views</span>
+            </div>
+            <button class="moreBtn">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </button>
+          </li>
+          <li class="item">
+            <div class="img"><img src="./image/cup-5.jpg" alt="" /></div>
+            <div class="itemInfo">
+              <span class="title"
+                >[Playlist] 없던 첫사랑도 생기는 설레는 띵곡 노래모음
+                플레이리스트#3
+              </span>
+              <span class="name">곰돌이</span>
+              <span class="views">82K views</span>
+            </div>
+            <button class="moreBtn">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </button>
+          </li>
+        </ul>
+      </section>
+    </div>
   </body>
 </html>
